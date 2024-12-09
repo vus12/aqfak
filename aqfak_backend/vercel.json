@@ -2,7 +2,7 @@
     "version": 2,
     "builds": [
       {
-        "src": "agriculture/wsgi.py",
+        "src": "aqfak_backend/wsgi.py",
         "use": "@vercel/python",
         "config": {
           "maxLambdaSize": "15mb",
@@ -24,7 +24,7 @@
       },
       {
         "src": "/(.*)",
-        "dest": "agriculture/wsgi.py"
+        "dest": "aqfak_backend/wsgi.py"
       }
     ]
   }
